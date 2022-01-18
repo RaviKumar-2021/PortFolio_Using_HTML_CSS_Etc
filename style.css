@@ -1,0 +1,650 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kaushan+Script&family=Lobster&family=Zilla+Slab:wght@300&display=swap');
+
+/* font-family: 'Black Ops One', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Zilla Slab', serif; */
+
+
+/* Header */
+
+
+/* NavBar */
+
+.topnav {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    height: 50px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav .fa {
+    margin: -15px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+    font-family: 'Black Ops One', cursive;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav {
+        height: auto;
+        overflow: hidden;
+        background-color: #333;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav .fa {
+        margin: -50px;
+    }
+}
+
+
+/* Icons */
+
+#Intro {
+    background-color: #3B5998;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+#Intro .introLeft .title h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#Intro .title h1 {
+    margin-top: 150px;
+    text-align: center;
+    font-family: Cursive;
+}
+
+.introRight img {
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    /* border-radius: 50% 50% 67% 33% / 46% 15% 85% 54%; */
+    background-color: transparent;
+}
+
+ol {
+    list-style: none;
+    height: 30px;
+    background-color: lightblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+ol li {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Kaushan Script', cursive;
+}
+
+marquee {
+    font-weight: 700;
+    height: 30px;
+}
+
+
+/* icons */
+
+.fa {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    opacity: 0.7;
+    box-shadow: rgba(7, 7, 7, 0.25) 0px 54px 55px, rgba(228, 223, 223, 0.12) 0px -12px 30px, rgba(233, 227, 227, 0.12) 0px 4px 6px, rgba(236, 228, 228, 0.17) 0px 12px 13px, rgba(222, 225, 235, 0.09) 0px -3px 5px;
+}
+
+.fa-facebook {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #125688;
+    color: white;
+}
+
+.fa-envelope {
+    background: #125688;
+    color: white;
+}
+
+ul {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 35px;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 5%;
+}
+
+
+/* IntroResponsive */
+
+@media only screen and (max-width: 700px) {
+    .introLeft {
+        color: black;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        display: inline;
+        margin-top: 320px;
+        height: auto;
+    }
+    .introRight {
+        position: relative;
+    }
+    #Intro {
+        height: 700px;
+        background-color: blueviolet;
+    }
+}
+
+
+/* AboutUs */
+
+.aboutConatainer {
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    gap: 20px;
+    height: 400px;
+}
+
+.aboutLeft {
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    background-image: url(./Assets/Images/About.png);
+}
+
+.aboutLeft img {
+    height: 300px;
+    width: 300px;
+    overflow: visible;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.aboutRight {
+    margin: 20px;
+    z-index: 1;
+    margin-top: auto;
+}
+
+.aboutRight .containtent h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.aboutRight .containtent p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 900px) {
+    .aboutConatainer {
+        margin-top: 20px;
+        padding-right: 10px;
+        display: block;
+        justify-content: space-evenly;
+        background-color: transparent;
+        height: auto;
+    }
+    .aboutLeft {
+        margin: 20px auto;
+        padding-top: 30px;
+        padding-bottom: 0;
+        padding-left: 30px;
+        background-image: url(./Assets/images/About.png);
+    }
+    .aboutLeft img {
+        margin: 0;
+        height: 300px;
+        width: 300px;
+        overflow: visible;
+        opacity: 1;
+    }
+    .aboutRight {
+        margin: 20px;
+        z-index: 1;
+        margin-top: 10%;
+    }
+}
+
+
+/* Skills */
+
+.skillsHeading {
+    background-color: #dcf7f3;
+    color: #0b6e5e;
+}
+
+.skillsHeading h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    padding-bottom: -250px;
+    color: black;
+}
+
+label {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.skillsContainer {
+    color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skillsLeft {
+    grid-area: left;
+    margin-top: 80px;
+}
+
+.skillsRight {
+    grid-area: right;
+}
+
+label {
+    color: #035245;
+    font-size: 18px;
+}
+
+.skillsLeft progress {
+    border: none;
+    height: 2px;
+}
+
+progress::-webkit-progress-value {
+    background: rgb(1, 191, 255);
+}
+
+progress::-moz-progress-bar {
+    background: wheat;
+}
+
+.progressbar {
+    background-color: wheat;
+    width: 500px;
+    height: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .skillsContainer {
+        color: wheat;
+        display: block;
+        justify-content: space-evenly;
+    }
+    .skillsLeft {
+        margin-left: 30px;
+        margin-right: 30px;
+        grid-area: left;
+        margin-top: 80px;
+    }
+    .skillsRight img {
+        margin: 0 auto;
+    }
+    .skillsRight {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .skillsLeft progress {
+        width: 100%;
+        border: none;
+        height: 2px;
+    }
+}
+
+
+/* Education */
+
+.eduTitle h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.eduContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    height: 250px;
+    gap: 20px;
+}
+
+.eduContainer .eduLeft,
+.eduMiddle,
+.eduRight {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 30%;
+    padding: 0 20px;
+    background-color: lightblue;
+}
+
+.eduContainer .eduLeft,
+.eduMiddle,
+.eduRight h2 {
+    font-family: 'Lobster', cursive;
+    padding-top: 20px;
+}
+
+.eduContainer .eduLeft,
+.eduMiddle,
+.eduRight p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .eduContainer {
+        display: block;
+        justify-content: space-evenly;
+        margin: 40px;
+        height: auto;
+        gap: 20px;
+        text-align: center;
+    }
+    .eduContainer .eduLeft,
+    .eduMiddle,
+    .eduRight {
+        border-bottom: 1px solid blue;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+
+/* Intrested Fields  */
+
+.intrestFields {
+    background-color: blue;
+    color: white;
+}
+
+.intrestFields h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.intrestFields .intrestFirst {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: turquoise;
+    padding-right: 20px;
+}
+
+.intrestFields .intrestSecound {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    gap: 20px;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.intrestFields .intrestSecound .intrestRight {
+    float: right;
+}
+
+.intrestFields .intrestThird {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    background-color: turquoise;
+    gap: 20px;
+}
+
+.intrestFields img {
+    height: 350px;
+    width: 400px;
+}
+
+.text {
+    margin: auto;
+    text-align: center;
+}
+
+.text h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.text p {
+    font-size: 25px;
+    font-family: 'Zilla Slab', serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .intrestFields {
+        background-color: black;
+        color: white;
+    }
+    .intrestFields img {
+        height: 200px;
+        width: 200px;
+    }
+    .intrestFields .intrestFirst,
+    .intrestFields .intrestSecound,
+    .intrestFields .intrestThird {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        text-align: right;
+    }
+    .text p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .text h2 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    height: 250px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    grid-gap: 50px;
+}
+
+.footer .leftFooter {
+    padding-top: 50px !important;
+    margin-left: 100px;
+}
+
+.footer .leftFooter .footerLinks a {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer .leftFooter,
+.rightFooter,
+.middleFooter {
+    margin-top: 25px;
+    width: 33%;
+}
+
+.footer .leftFooter .footerLinks ::before {
+    content: "|";
+    color: white;
+    width: 10px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.footer .leftFooter .footerLinks .containt::before {
+    content: none;
+}
+
+.footer .leftFooter h3 {
+    color: #222;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .leftFooter h3 span {
+    color: red;
+}
+
+.footer .rightFooter .footerIcons {
+    text-align: center;
+}
+
+.footer .rightFooter .footerIcons a {
+    border: none;
+    border-radius: none;
+}
+
+.copyRight {
+    background-color: darkblue;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        margin-top: 0;
+        background-color: lightblue;
+        display: block;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    .footer .leftFooter,
+    .rightFooter,
+    .middleFooter {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.footerIcons .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 5px;
+    border-radius: 20%;
+    background-color: blue;
+}
